@@ -41,7 +41,8 @@ function birthday($birthday) {
         }
         ?>
     <p class="background"><b>Biography: </b><?php echo $_POST["biography"]; ?></p>
-    <p class="background"><b>List of Interests:</b><br/></p>
+    <div class="background">
+    <p><b>List of Interests:</b></p>
     <ul class='list'>
     <?php
     // Check if form is submitted successfully
@@ -54,11 +55,12 @@ function birthday($birthday) {
             }
             else echo "Select an option first !!";
         }
-
         
 
     ?> 
-    </ul>   
+    
+    </ul>  
+    </div> 
 </div>    
        
     <div class="footer">

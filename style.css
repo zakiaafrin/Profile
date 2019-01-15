@@ -23,7 +23,7 @@ resize: vertical;
 }
 
 input[type=submit] {
-background-color: #4CAF50;
+background-color: #5d3d53;
 color: white;
 padding: 12px 20px;
 border: none;
@@ -63,6 +63,7 @@ text-align: center;
 margin-left: 400px;
 margin-right: 400px;
 }
+
 .background {
 background-color: #b9b6b6;
 border-radius: 25px;
@@ -77,14 +78,15 @@ background-color: rgb(194, 238, 192);
 border-radius: 25px;
 padding: 20px;
 text-align: center;
-margin-left: 400px;
-margin-right: 400px;
+margin-left: 100px;
+margin-right: 100px;
 }
 
 .li {
 list-style-type: none;
 background-color: rgb(194, 238, 192);
 top:20px;
+width: 100%;
 }
 
 .footer {
