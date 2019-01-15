@@ -60,16 +60,16 @@ font-weight: bold;
 border-radius: 25px;
 padding: 20px;
 text-align: center;
-margin-left: 500px;
-margin-right: 500px;
+margin-left: 400px;
+margin-right: 400px;
 }
 .background {
 background-color: #b9b6b6;
 border-radius: 25px;
 padding: 20px;
 text-align: center;
-margin-left: 500px;
-margin-right: 500px;
+margin-left: 400px;
+margin-right: 400px;
 }
 
 .list {
@@ -77,8 +77,8 @@ background-color: rgb(194, 238, 192);
 border-radius: 25px;
 padding: 20px;
 text-align: center;
-margin-left: 500px;
-margin-right: 500px;
+margin-left: 400px;
+margin-right: 400px;
 }
 
 .li {
