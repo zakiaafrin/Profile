@@ -61,6 +61,7 @@ function birthday($birthday) {
     
     </ul>  
     </div> 
+    <div class="back"><a href="index.php">Back</a></div>
 </div>    
        
     <div class="footer">

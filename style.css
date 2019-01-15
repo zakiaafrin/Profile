@@ -89,12 +89,9 @@ top:20px;
 width: 100%;
 }
 
-.footer {
-background-color: #805e6a;
-color: #ffffff;
-text-align: center;
-font-size: 15px;
-padding: 4px;
+.back {
+  text-align: center;
+
 }
 
 .header {
@@ -103,4 +100,12 @@ color: #ffffff;
 text-align: center;
 font-size: 15px;
 padding: 8px;
+}
+
+.footer {
+background-color: #805e6a;
+color: #ffffff;
+text-align: center;
+font-size: 15px;
+padding: 4px;
 }
