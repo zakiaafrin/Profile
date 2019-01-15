@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #805e6a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.container {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+.error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.message {
+font-family: sans-serif;
+color: #00AAE9;
+font-size: 16px;
+background-color: rgba(145, 216, 98, 0.801);
+}
+
+.birthday {
+color: #45a049;
+font-size: 20px;
+font-weight: bold;
+border-radius: 25px;
+padding: 20px;
+text-align: center;
+margin-left: 500px;
+margin-right: 500px;
+}
+.background {
+background-color: #b9b6b6;
+border-radius: 25px;
+padding: 20px;
+text-align: center;
+margin-left: 500px;
+margin-right: 500px;
+}
+
+.list {
+background-color: rgb(194, 238, 192);
+border-radius: 25px;
+padding: 20px;
+text-align: center;
+margin-left: 500px;
+margin-right: 500px;
+}
+
+.li {
+list-style-type: none;
+background-color: rgb(194, 238, 192);
+top:20px;
+}
+
+.footer {
+background-color: #805e6a;
+color: #ffffff;
+text-align: center;
+font-size: 15px;
+padding: 4px;
+}
+
+.header {
+background-color: #805e6a;
+color: #ffffff;
+text-align: center;
+font-size: 15px;
+padding: 8px;
+}
