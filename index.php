@@ -1,10 +1,4 @@
-<?php 
-
-
-
-
-
-include "inc/header.php"; ?>
+<?php include "inc/header.php"; ?>
     <h1>Please Enter Your Details</h1>
    <form action="display.php" method="post" enctype="multipart/form-data">
        <h4>User Name : <input type="text" name="name" required /></h4>
