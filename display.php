@@ -4,13 +4,49 @@ function birthday($birthday) {
     $age = date_create($birthday)->diff(date_create('today'))->y;
  
     return $age;
- }
+}
+
+$target_dir = "images/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        // echo "File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        // echo "File is not an image.";
+        $uploadOk = 0;
+    }
+}
+
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+// Allow certain file formats
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+}
+
+// display image
+$image = $_FILES["fileToUpload"]["name"]; 
+$img = "images/".$image;
+// echo "<img src='$img'>";
 
  include("inc/header.php"); 
 
 ?>
     <h1>Profile</h1>
-    <p class="background"><b>Name: </b><?php echo $_POST["name"]; ?></p>
+    <p class="background"><img src="<?php echo $img; ?>" width="200" style="border-radius: 50%;"/><br/>
+    <b><?php echo $_POST["name"]; ?></b></p>
+    <!-- <p class="background"></p>        -->
     <p class="background"><b>Date Of Birth: </b><?php echo $_POST["birthDate"]; ?></p>
     <p class="background"><b>Age: </b><?php echo birthday($_POST['birthDate']);; ?></p>
     <?php
@@ -46,6 +82,6 @@ function birthday($birthday) {
     ?> 
     
     </ul>  
-    </div> 
-    <div class="back"><a href="index.php">Back</a></div>
+    </div> <br/>
+    <div class="back"><a href="index.php" style="text-decoration: none; border: 2px solid #b15ac0; border-radius: 25px; padding: 9px;">Back</a></div>
     <?php include "inc/footer.php"; ?>

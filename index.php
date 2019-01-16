@@ -1,7 +1,14 @@
-<?php include "inc/header.php"; ?>
+<?php 
+
+
+
+
+
+include "inc/header.php"; ?>
     <h1>Please Enter Your Details</h1>
-   <form action="display.php" method="post">
+   <form action="display.php" method="post" enctype="multipart/form-data">
        <h4>User Name : <input type="text" name="name" required /></h4>
+       <h4>User Image : <input type="file" name="fileToUpload" id="fileToUpload" required></h4>
        <h4>Date Of Birth : </h4><input type="date" name="birthDate" required />
        <h4>Biography:</h4>
        <textarea name="biography" id="" cols="30" rows="6" required ></textarea>
