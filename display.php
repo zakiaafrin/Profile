@@ -51,8 +51,9 @@ if ($uploadOk == 0) {
 }
 // display image
 $image = $_FILES["fileToUpload"]["name"]; 
+$tempname = $_FILES["fileToUpload"]["tmp_name"];
 $img = "images/".$image;
-// echo "<img src='$img'>";
+
 
  include("inc/header.php"); 
 
@@ -60,7 +61,7 @@ $img = "images/".$image;
     <h1>Profile</h1>
     <p class="background"><img src="<?php echo $img; ?>" width="200" style="border-radius: 50%;"/><br/>
     <b><?php echo $_POST["name"]; ?></b></p>
-    <!-- <p class="background"></p>        -->
+
     <p class="background"><b>Date Of Birth: </b><?php echo $_POST["birthDate"]; ?></p>
     <p class="background"><b>Age: </b><?php echo birthday($_POST['birthDate']);; ?></p>
     <?php
